@@ -5,7 +5,7 @@ const patterns = {
   email: /^([a-z\d\.-]+)@([a-z]{2,8})\.([a-z]{2,8})(\.[a-z]{2,8})?$/i,
   password: /\b[\w@-]{8,20}\b/,
   telephone: /\b\d{11}\b/,
-  slug: /^[a-z\d-]{8,20}$/,
+  slug: /^[a-z\d-\s]{8,20}$/,
 };
 
 function validate(input, regex) {
